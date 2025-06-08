@@ -7,6 +7,17 @@ export const subjects = [
   "economics",
 ];
 
+export const Sub = [
+  "All Subjects",
+  "Maths",
+  "Language",
+  "Science",
+  "History",
+  "Coding",
+  "Economics"
+
+]
+
 export const subjectsColors = {
   science: "#E5D0FF",
   maths: "#FFDA6E",

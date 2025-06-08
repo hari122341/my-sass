@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import NavItems from './NavItems'
 import Image from 'next/image'
-import { SignInButton, SignUpButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
+import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 const Navbar = () => {
     return (
         <nav className='flex items-center justify-between mx-auto w-full px-14 py-4 bg-white max-sm:px-4'>

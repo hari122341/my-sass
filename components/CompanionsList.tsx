@@ -1,9 +1,9 @@
 import {
     Table,
     TableBody,
-    TableCaption,
+
     TableCell,
-    TableFooter,
+
     TableHead,
     TableHeader,
     TableRow,
@@ -18,7 +18,7 @@ import { cn, getSubjectColor } from "@/lib/utils";
 import Image from "next/image";
 
 
-const CompanionsList = ({ title, companions, classNames }: CompanionsListProps) => {
+const CompanionsList = ({ companions, classNames }: CompanionsListProps) => {
     return (
         <article className={cn("rounded-4xl border border-black px-7 pt-7 pb-10 max-lg:w-full bg-white", classNames)}>
             <h2 className="font-bold text-3xl">Recent Sessions</h2>
@@ -37,8 +37,8 @@ const CompanionsList = ({ title, companions, classNames }: CompanionsListProps) 
 
                     {
                         companions?.map(
-                            ({ id, subject, name, topic, duration }) => (
-                                <TableRow key={id}>
+                            ({ id, subject, name, topic, duration }, index) => (
+                                <TableRow key={`${id}-${index}`}>
                                     <TableCell>
                                         <Link href={`/companions/${id}`}>
                                             <div className="flex items-center gap-2">

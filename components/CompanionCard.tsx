@@ -4,7 +4,7 @@ interface CompanionCardProps {
     name: string,
     topic: string,
     subject: string,
-    duration: Number,
+    duration: number,
     color: string
 }
 import Link from 'next/link'
